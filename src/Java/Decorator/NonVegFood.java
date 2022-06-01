@@ -9,7 +9,7 @@ public class NonVegFood extends FoodDecorator{
     }
 
     public String prepareFood(){
-        return super.prepareFood() + "With roasted Chicken and Chicken Curry";
+        return super.prepareFood() + " With roasted Chicken and Chicken Curry";
     }
 
     public double foodPrice(){

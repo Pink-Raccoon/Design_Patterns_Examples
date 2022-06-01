@@ -10,7 +10,7 @@ public class ChineseFood extends FoodDecorator{
     }
 
     public String prepareFood(){
-        return super.prepareFood() + "With Fried Rice and Manchurian";
+        return super.prepareFood() + " With Fried Rice and Manchurian";
     }
 
     public double foodPrice(){

@@ -16,7 +16,7 @@ public class DecoratorPatternCustomer {
             System.out.print("========= Food Menu ============ \n");
             System.out.print("            1. Vegetarian Food.   \n");
             System.out.print("            2. Non-Vegetarian Food.\n");
-            System.out.print("            3. Chineese Food.         \n");
+            System.out.print("            3. Chinese Food.         \n");
             System.out.print("            4. Exit                        \n");
             System.out.print("Enter your choice: ");
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
