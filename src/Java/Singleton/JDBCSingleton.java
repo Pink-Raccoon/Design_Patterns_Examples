@@ -20,9 +20,9 @@ public class JDBCSingleton {
 
     private static Connection getConnection()throws ClassNotFoundException, SQLException{
         Connection conn = null;
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName("org.sqlite.JDBC");
 
-        conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/ashwanirajput",
+        conn= DriverManager.getConnection("jdbc:sqlite:ashwanirajput",
                 "root", "ashwani");
         return conn;
     }
@@ -123,7 +123,10 @@ public class JDBCSingleton {
         }
         return recordCounter;
     }
-
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
+        JDBCSingleton jdbcSingleton = new JDBCSingleton();
+        jdbcSingleton.getConnection();
+    }
 
 
 }
